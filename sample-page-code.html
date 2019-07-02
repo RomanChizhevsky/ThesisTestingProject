@@ -1,0 +1,403 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thesis Testing Sample Page</title>
+  
+  <style>
+    @import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+  </style>
+  
+  <style>
+  
+html, body
+{
+height: 100%;
+}
+
+body
+{
+position: relative;
+background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg");
+} 
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding-right: 3em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em;
+  -webkit-transition: color 0.5s; /* Safari prior 6.1 */
+  transition: color 0.5s;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tables1
+{
+	display: table;
+	margin: 0 auto;
+}
+
+.menuicon-lines
+{
+width: 2em;
+height: 0.1em;
+background-color: white;
+margin: 0.4em 0;
+}
+
+.outercols
+{
+width: 10%;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.innercols
+{
+width: 80%;
+}
+
+.background-text
+{
+position: absolute;
+top: 50%;
+bottom: 50%;
+left: 5em;
+color: white;
+width: 30em;
+z-index: -1;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.parent > .child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.child-innercontainer
+{
+height: 25em;
+}
+
+.lowercol-1
+{
+width: 20%;
+}
+
+.lowercol-2
+{
+width: 80%;
+}
+
+.menu
+{
+position: fixed;
+width: 15em;
+right: -15.5em;
+top: 0;
+background-color: black;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+padding-left: 1em;
+height: 100%;
+-webkit-transition: right 2s; /* Safari prior 6.1 */
+transition: right 2s;
+cursor: default;
+}
+
+.menu > li
+{
+float: left; 
+clear: both;
+letter-spacing: 0.2em;
+}
+
+#menu-selector
+{
+cursor: pointer;
+}
+
+#menu-selector:focus > #menu-01
+{
+	right: 0;
+}
+
+.copyrighttxt
+{
+color: white; 
+font-size: 0.9em; 
+float: left; 
+margin-left: 3em;
+}
+
+#footerlist
+{
+float: right;
+}
+
+@media all and (max-width: 1050px)
+{
+	#example1
+	{
+		display: none;
+	}
+}
+
+@media all and (max-width: 750px)
+{
+	#copyrightcol
+	{
+		display: none;
+	}
+	
+	#footerlist
+	{
+		float: none;
+	}
+}
+
+@media all and (max-width: 570px)
+{
+	html, body
+	{
+		width: 569px;
+	}
+	
+	.tables1
+	{
+		width: 403px;
+	}
+	
+	#footerlist
+	{
+		width: 490px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+a:focus
+{
+outline: 0;
+}
+  </style>
+  
+  <style> /* Login */
+
+
+html { 
+background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: transparent;
+}
+
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login
+{
+ border-radius: 0.4em;
+ border: 0.1em solid rgba(211, 211, 211, .5);
+ width: 30em;
+ margin: 0 auto;
+}
+
+.logintext
+{
+color: white; 
+background-color: transparent;
+padding: 0.8em;
+width: 100%;
+}
+
+.loginname
+{
+border-radius: 0.4em 0.4em 0 0;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 0.1em solid rgba(211, 211, 211, .3);
+}
+
+.loginemail
+{
+border-top: 0;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+}
+
+.loginpass
+{
+
+border-top: 0.1em solid rgba(211, 211, 211, .3);
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+}
+
+.loginbutton
+{
+border-top: 0;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+border-radius: 0 0 0.4em 0.4em;
+background-color: #2c99ed;
+color: white;
+width: 100%;
+padding: 0.8em;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgba(255, 255, 255, .7);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgba(255, 255, 255, .7);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgba(255, 255, 255, .7);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgba(255, 255, 255, .7);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgba(255, 255, 255, .7);
+}
+
+::placeholder {
+   color:    rgba(255, 255, 255, .7);
+}
+  </style>
+
+</head>
+
+<body>
+	<table style="width: 100%; position: fixed;">
+	<tr>
+	<td class="outercols">
+	<span class="unselectable" style="font-size: 2em; color: white;">Stamp</span>
+	</td>
+	<td class="innercols">
+	<div class="tables1">
+	<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Integrations</a></li>
+		<li><a href="#">Pricing</a></li>
+		<li><a href="#">Contacts</a></li>
+	</ul>
+	</div>
+	</td>
+	<td class="outercols">
+	<div id="menu-selector" style="float: right;" tabindex="0">
+		<div class="menuicon-lines"></div>
+		<div class="menuicon-lines"></div>
+		<div class="menuicon-lines"></div>
+		<ul id="menu-01" class="menu">
+			<li><h2>Menu</h2></li>
+			<li><a href="#">Lorem</a></li>
+			<li><a href="#">Ipsum</a></li>
+			<li><a href="#">Dolom</a></li>
+			<li><a href="#">Example</a></li>
+		</ul>
+	</div>
+	</td>
+	</tr>
+	</table>
+	<div class="parent">
+		<div id="example1" class="child">
+			<div class="child-innercontainer">
+			<div class="unselectable" style="width: 30em; margin-left: 40%; z-index: -1; color: white;">		
+				<span style="font-size: 4em; font-weight: bold;">Simple Way to Organize Your Inspirations</span>
+				<br />
+				<h4> I think what motivates people is not great hate, but great love for other people. </h4>
+			</div>
+			</div>
+		</div>
+		<div class="child" style="width: 10%;"></div>
+		<div class="child">
+			<div class="child-innercontainer">
+			<div style="text-align: center; margin-bottom: 2em;"><span style="color: white;font-size: 1.1em; letter-spacing: 0.1em;">SIGN UP FOR FREE</span></div>
+			<form action="#">
+			<div class="login">
+				<input type="text" class="logintext loginname" placeholder="Name">
+				<br />
+				<input type="text" class="logintext loginemail" placeholder="Email">
+				<br />
+				<input type="password" class="logintext loginpass" placeholder="Password">
+				<br />
+				<button type="submit" class="loginbutton">Sign Up ></button>
+			</div>
+			<div style="text-align: center; margin-top: 1em;">
+			<span style="color: white;font-size: 0.9em;">By clicking "Sign Up" I agree to our</span>
+			<a href="#">Terms & Services</a>
+			</div>			
+			</form>
+			</div>
+		</div>
+	</div>
+	<div style="position: fixed; bottom: 0; width: 100%;">
+		<table style="width: 100%;">
+			<tr>
+				<td id="copyrightcol"><span class="copyrighttxt unselectable">© 2016 Stamp. All Rights Reserved</span></td>
+				<td>
+						<div id="footerlist" class="tables1">
+							<ul>
+								<li><a href="#">CONTACT</a></li>
+								<li><a href="#">HELP</a></li>
+								<li><a href="#">TERMS OF USE</a></li>
+								<li><a href="#">PRIVACY POLICY</a></li>
+							</ul>
+						</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
